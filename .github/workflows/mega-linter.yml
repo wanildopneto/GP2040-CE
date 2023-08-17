@@ -24,7 +24,6 @@
     build:
       name: MegaLinter
       runs-on: ubuntu-latest
-      environment: PAT  # Specify the environment name here
       permissions:
         # Give the default GITHUB_TOKEN write permission to commit and push, comment issues & post new PR
         # Remove the ones you do not need
