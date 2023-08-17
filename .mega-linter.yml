@@ -1,6 +1,7 @@
 # Configuration file for MegaLinter
 # See all available variables at https://megalinter.io/configuration/ and in linters documentation
 
+APPLY_FIXES: all # all, none, or list of linter keys
 # ENABLE: # If you use ENABLE variable, all other languages/formats/tooling-formats will be disabled by default
 # ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be disabled by default
 DISABLE:
@@ -15,5 +16,3 @@ FILTER_REGEX_EXCLUDE: (lib/)
 PRE_COMMANDS:
   - command: npm install eslint-plugin-i18next@latest
     cwd: "root" # Will be run at the root of MegaLinter docker image
-
-UPDATED_SOURCES_REPORTER: false
