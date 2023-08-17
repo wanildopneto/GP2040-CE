@@ -8,7 +8,7 @@ DISABLE:
   - SPELL # Uncomment to disable checks of spelling mistakes
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: true
-# DISABLE_ERRORS: true # Uncomment if you want MegaLinter to detect errors but not block CI to pass
+DISABLE_ERRORS: true # Uncomment if you want MegaLinter to detect errors but not block CI to pass
 
 FILTER_REGEX_EXCLUDE: (lib/)
 
@@ -16,5 +16,4 @@ PRE_COMMANDS:
   - command: npm install eslint-plugin-i18next@latest
     cwd: "root" # Will be run at the root of MegaLinter docker image
 
-DISABLE_ERRORS: true
 UPDATED_SOURCES_REPORTER: false
