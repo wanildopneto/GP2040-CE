@@ -53,10 +53,10 @@ Visit the [GP2040-CE Usage](https://gp2040-ce.info/#/usage) page for more detail
 
 Input latency is tested using the methodology outlined at [WydD's inputlag.science website](https://inputlag.science/controller/methodology), using the default 1000 Hz (1 ms) polling rate in the firmware.
 
-| Version | Mode | Poll Rate | Min | Max | Avg | Stdev | % on time | %1f skip | %2f skip |
-| - | - | - | - | - | - | - | - | - | - |
-| v0.7.0 | All modes (except PS4) | 1 ms | 0.53 ms | 1.36 ms | 0.86 ms | 0.25 ms | 95.91% | 4.09% | 0% |
-| v0.7.0 | PS4 Mode | 1 ms | 1.45 ms | 2.14 ms | 1.86 ms | 0.16 ms | 90.26% | 9.74% | 0% |
+| Version | Mode                   | Poll Rate | Min     | Max     | Avg     | Stdev   | % on time | %1f skip | %2f skip |
+|---------|------------------------|-----------|---------|---------|---------|---------|-----------|----------|----------|
+| v0.7.0  | All modes (except PS4) | 1 ms      | 0.53 ms | 1.36 ms | 0.86 ms | 0.25 ms | 95.91%    | 4.09%    | 0%       |
+| v0.7.0  | PS4 Mode               | 1 ms      | 1.45 ms | 2.14 ms | 1.86 ms | 0.16 ms | 90.26%    | 9.74%    | 0%       |
 
 Full results can be found in the [GP2040-CE Firmware Latency Test Results](https://docs.google.com/spreadsheets/d/1OLmVg04e2q4aY0tqSJuaHtD8YMNCQnP-MzzSTtQLVm4) Google Sheet.
 

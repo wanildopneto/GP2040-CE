@@ -17,6 +17,7 @@ FILTER_REGEX_EXCLUDE: (lib/)
 
 PRE_COMMANDS:
   - command: npm install eslint-plugin-i18next@latest
-    cwd: "root"        # Will be run at the root of MegaLinter docker image
+    cwd: "root" # Will be run at the root of MegaLinter docker image
 
 DISABLE_ERRORS: true
+UPDATED_SOURCES_REPORTER: false
