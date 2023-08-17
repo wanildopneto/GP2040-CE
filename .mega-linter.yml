@@ -2,6 +2,8 @@
 # See all available variables at https://megalinter.io/configuration/ and in linters documentation
 
 APPLY_FIXES: all # all, none, or list of linter keys
+APPLY_FIXES_EVENT: all # all, push, pull_request, none (use none in case of use of Updated sources reporter)
+APPLY_FIXES_MODE: pull_request # create a new commit and push it on the same branch, or pull_request to create a new PR targeting the branch.
 # ENABLE: # If you use ENABLE variable, all other languages/formats/tooling-formats will be disabled by default
 # ENABLE_LINTERS: # If you use ENABLE_LINTERS variable, all other linters will be disabled by default
 DISABLE:
@@ -14,7 +16,7 @@ FILEIO_REPORTER: true
 FILTER_REGEX_EXCLUDE: (lib/)
 
 PRE_COMMANDS:
-  - command: npm install eslint-plugin-i18next@latest stylelint-config-standard-scss
+  - command: npm install eslint-plugin-i18next@latest
     cwd: "root"        # Will be run at the root of MegaLinter docker image
 
 DISABLE_ERRORS: true

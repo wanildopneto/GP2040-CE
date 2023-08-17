@@ -7,7 +7,6 @@ extends:
   - plugin:react/recommended
   - plugin:react-hooks/recommended
   - plugin:i18next/recommended
-  - stylelint-config-standard-scss
 overrides: []
 parserOptions:
   ecmaVersion: latest
@@ -25,4 +24,4 @@ rules:
   no-unused-vars: off
   react-hooks/exhaustive-deps: off
   no-extra-boolean-cast: off
-  declaration-property-value-no-unknown: true
+ignorePatterns: "**/*.scss"
